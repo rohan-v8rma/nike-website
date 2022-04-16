@@ -80,15 +80,11 @@ header {
 .nav-bar-button {
     font-family: Inter-Regular;
     font-size: 0.8em;
-    transition: color 0.5s;
+    transition: 0.5s;
 }
 
 .nav-bar-button:hover {
     color:#FF80BF;
-}
-
-.navbar-buttons:hover {
-    color: #FF80BF;
 }
 
 .shoe-details-and-buy-button-container {
@@ -116,21 +112,34 @@ header {
 
 .buy-button {
     display: inline-block;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    
+    margin: 1%;
+
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     
     font-family: Inter-ExtraBold;
     text-align: center;
     color: white;
-    background-color: #FF80BF;
+    background-image: linear-gradient(to top right, #ff55aa, #fba3cf);
 
-    transition: color 0.5s;
+    transition: 0.5s;
 }
 
 .buy-button:hover {
     color: black;
+    background-image: linear-gradient(to bottom left, #ff55aa, #fba3cf);
+
+    /* The code below is for changing 
+    the button size on hovering.*/
+    margin: 0%;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .social-media-button-container {
