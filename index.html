@@ -14,6 +14,7 @@
                 src="images/nike-swoosh.png" />
                 <span class="name">NIKE</span>
             </div>
+            
             <nav class="nav-bar-container">
                 <a class="nav-bar-button">HOME</a>
                 <a class="nav-bar-button">FEATURED</a>
@@ -23,15 +24,28 @@
             </nav>
         </header>
 
-        <div class="shoe-details-and-buy-button-container">
-            <section class="shoe-details">
-                <h1 class="detail-heading">NIKE SHOES</h1>
-                <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-            </section>
-        
-            <a class="buy-button"">BUY NOW</a>
+        <div class="middle-div">
+            <div class="shoe-details-and-buy-button-container">
+                <section class="shoe-details">
+                    <h1 class="detail-heading">NIKE SHOES</h1>
+                    <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                </section>
+            
+                <a class="buy-button"">BUY NOW</a>
+            </div>
+            
+            <div class="size-slider-container">
+                <span class="text-on-top-of-slider">Apply Size</span>
+                <input class="slider" type="range" min="20" max="40" step="5" list="sizes">
+                <datalist id="sizes">
+                    <option value="20" label="20"></option>
+                    <option value="25" label="25"></option>
+                    <option value="30" label="30"></option>
+                    <option value="35" label="35"></option>
+                    <option value="40" label="40"></option>
+                </datalist>
+            </div>
         </div>
-
         <footer class="social-media-button-container">
             <a href="https://www.facebook.com/nike/">
                 <img 

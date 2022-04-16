@@ -97,12 +97,21 @@ header {
     font-size: 1.1em;
 }
 
-.shoe-details-and-buy-button-container {
+.middle-div {
+    display: flex;
+    flex-direction: row;
 
-    padding-left: 7%;
     margin-top: 15%;
-    width: 35%;
     height: 50%;
+    margin-bottom: 2%;
+}
+
+.shoe-details-and-buy-button-container {
+    display: inline-block;
+    padding-left: 7%;
+    
+    /* width: 45%; */
+    flex: 0.52; /* because 45% width + 7% left padding gives 52% */
 }
 
 .detail-heading {
@@ -113,7 +122,10 @@ header {
 
 .details {
     width: 70%;
+    
     font-family: Inter-Regular;
+    font-size: 1em;
+    
     line-height: 200%;
     /*Line spacing is expressed relative 
     to the font size*/
@@ -150,6 +162,28 @@ header {
     padding-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.size-slider-container {
+    display: inline-block;
+    padding-left: 22%;
+    padding-top: 18%;
+    /* padding-right: 10%; */
+    /* width: 26%; */
+    flex: 0.48; /* because 22% padding + 26% width gives 48% */
+}
+
+.text-on-top-of-slider {
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-family: Inter-ExtraBold;
+    font-size: 1.1em;
+}
+
+.slider {
+    width: 75%;
+    accent-color: #ff55aa;
 }
 
 .social-media-button-container {
