@@ -78,13 +78,23 @@ header {
 }
 
 .nav-bar-button {
+    display: inline-block;
     font-family: Inter-Regular;
     font-size: 0.8em;
+    margin: 2%;
+    
     transition: 0.5s;
 }
 
 .nav-bar-button:hover {
     color:#FF80BF;
+
+    /*
+    The code below is for increasing font size 
+    upon hovering on the navbar buttons
+    */
+    margin: 0%;
+    font-size: 1.1em;
 }
 
 .shoe-details-and-buy-button-container {
