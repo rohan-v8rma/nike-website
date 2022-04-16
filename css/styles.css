@@ -1,0 +1,153 @@
+@font-face {
+    font-family: DBXL-UltraWide;
+    src: 
+        url(../fonts/DBXL-UltraWide.ttf)
+        format('truetype');
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: 
+        url(../fonts/Inter-Regular.ttf)
+        format('truetype');
+}
+
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: 
+        url(../fonts/Inter-ExtraBold.ttf)
+        format('truetype');
+}
+
+@font-face {
+    font-family: MPlus-1C-Heavy;
+    src: 
+        url(../fonts/mplus-1c-heavy.ttf)
+        format('truetype');
+
+}
+
+.html-and-body {
+    margin: 0;
+    padding: 0;
+    
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(../images/shoe-background.png);
+    background-repeat: no-repeat;
+    background-position: right 45% bottom 30%;
+    background-size: 90%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 2%;
+    height: 2%;
+}
+
+.logo-and-name-container {
+    flex: 0.45;
+
+    display: flex;
+    align-items: center;
+    
+    padding-left: 7%;
+}
+
+.logo {
+    height: 24px;
+}
+
+.name {
+    font-family: DBXL-UltraWide;
+    font-size: 1.4em;
+}
+
+.nav-bar-container {
+    flex: 0.55;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-bar-button {
+    font-family: Inter-Regular;
+    font-size: 0.8em;
+    transition: color 0.5s;
+}
+
+.nav-bar-button:hover {
+    color:#FF80BF;
+}
+
+.navbar-buttons:hover {
+    color: #FF80BF;
+}
+
+.shoe-details-and-buy-button-container {
+
+    padding-left: 7%;
+    margin-top: 15%;
+    width: 35%;
+    height: 50%;
+}
+
+.detail-heading {
+    font-family: MPlus-1C-Heavy;
+    font-size: 4em;
+    margin: 0;
+}
+
+.details {
+    width: 70%;
+    font-family: Inter-Regular;
+    line-height: 200%;
+    /*Line spacing is expressed relative 
+    to the font size*/
+
+}
+
+.buy-button {
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    font-family: Inter-ExtraBold;
+    text-align: center;
+    color: white;
+    background-color: #FF80BF;
+
+    transition: color 0.5s;
+}
+
+.buy-button:hover {
+    color: black;
+}
+
+.social-media-button-container {
+    height: 4%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 10%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.social-media-button {
+    height: 100%;
+    border-radius: 50%;
+    /*This ensures that the area just outside the circle is not clickable*/
+}
